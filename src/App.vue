@@ -38,6 +38,9 @@ function gererAchat(produit: Produit)  {
 // TODO 3 : Fonction gererSuppression(idProduit: number)
 // - Retirer le produit correspondant de la liste produits.value
 // -------------------------------------------------------------
+function  gererSuppression(idProduit: number) {
+  produits.value = produits.value.filter((p) => p.id !== idProduit)
+}
 </script>
 
 <template>
