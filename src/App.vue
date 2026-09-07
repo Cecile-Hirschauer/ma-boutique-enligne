@@ -65,9 +65,9 @@ function  gererSuppression(idProduit: number) {
     >
       <p style="margin: 0; font-size: 1.1rem">
         <!-- TODO 4 : Afficher ici le nombre d'articles (longueur de panier) -->
-        🛒 Articles au panier : <strong>0</strong> |
+        🛒 Articles au panier : <strong>{{ panier.length }}</strong> |
         <!-- TODO 5 : Afficher ici le total calculé par totalPanier -->
-        Total : <strong>0 €</strong>
+        Total : <strong>{{ totalPanier }} €</strong>
       </p>
     </section>
 
