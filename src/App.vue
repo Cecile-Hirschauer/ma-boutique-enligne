@@ -27,6 +27,12 @@ const totalPanier = computed<number>(() => {
 // - Si oui : décrémenter son stock de 1
 // - Et ajouter son prix au tableau panier.value
 // -------------------------------------------------------------
+function gererAchat(produit: Produit)  {
+  if (produit.stock > 0) {
+    produit.stock -= 1
+    panier.value.push(produit.prix)
+  }
+}
 
 // -------------------------------------------------------------
 // TODO 3 : Fonction gererSuppression(idProduit: number)
